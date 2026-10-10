@@ -40,3 +40,10 @@ Ranges are half-open `[start, end)`. `swapRanges` requires the two ranges to be 
 - `toArray()`
 - `reverseRange(start, end)`
 - `swapRanges(s1, e1, s2, e2)`
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
