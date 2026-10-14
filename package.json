@@ -1,6 +1,6 @@
 {
   "name": "treap-implicit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Represents an indexed sequence with split and merge operations supporting efficient range reversals and swaps.",
   "type": "module",
   "main": "src/index.js",
